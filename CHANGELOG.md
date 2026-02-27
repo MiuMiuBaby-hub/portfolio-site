@@ -4,6 +4,34 @@
 
 ---
 
+## [1.0.0] — 2026-02-28
+
+### 視覺優化
+- 桌面版全面加大尺寸：卡片 padding 24→32px、標題 17→21px、icon 28→36px、tech tag 10→12px
+- Grid 最小卡片寬度 320→400px、容器寬度 1200→1400px、gap 20→28px
+- Hero 區統計數字 32→40px、副標題 15→18px
+- FilterBar 按鈕 13→15px
+
+### 響應式設計
+- 新增 `@media (max-width: 768px)` 行動裝置斷點
+- 所有元件（Hero、FilterBar、ProjectCard）皆有 mobile 縮小樣式
+- Mobile 下卡片單欄排列
+
+### 專案資料調整
+- 移除 9 個非展示專案：C5、Ed、SmartG、Sort_Photos、TriageHR.old、Working、Release、Tools、EXCEL、MyAddrBookPlus V2
+- 新增 Icon Generator 專案（開發者工具類）
+- 最終保留 18 個專案，7 個分類
+- 加入 9 個專案版本號（掃描自各專案 package.json）
+- 修正 Bridgify Mobile 技術棧：React Native → Flutter/Dart
+
+### 部署
+- 建立 GitHub repo：MiuMiuBaby-hub/portfolio-site
+- 新增 GitHub Actions CI/CD workflow（push master → 自動部署 GitHub Pages）
+- 設定 vite `base: '/portfolio-site/'`
+- 網址：https://miumiubaby-hub.github.io/portfolio-site/
+
+---
+
 ## [1.0.0-beta] — 2026-02-27
 
 ### 建立專案

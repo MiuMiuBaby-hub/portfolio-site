@@ -1,24 +1,21 @@
 # ROADMAP & TODO
 
-> 最後更新：2026-02-27（初版建立）
+> 最後更新：2026-02-28
 
 ---
 
 ## 🔴 P0 — 必須先完成（上線前）
 
-- [ ] **校對 projects.json 內容**
-  - 所有專案的 tagline 和 description 都是根據名稱猜測的，需要用戶逐一確認
-  - 特別是：C5、Ed、Synapse、YProtocol、Bridgify 等名稱模糊的專案
-  - 確認分類是否正確（目前分為 8 類）
-  - 確認哪些專案要保留、哪些要移除
+- [x] ~~校對 projects.json 內容~~ ✅ 已完成
+  - 移除 9 個非展示專案（C5、Ed、SmartG、Sort_Photos、TriageHR.old、Working、Release、Tools、EXCEL、MyAddrBookPlus V2）
+  - 新增 Icon Generator 專案
+  - 最終保留 18 個專案，分為 7 類
+  - 加入 9 個專案的版本號
+  - 修正 Bridgify Mobile 技術棧（React Native → Flutter/Dart）
 
-- [ ] **設定 Firebase 專案**
-  - 替換 `.firebaserc` 中的 `your-firebase-project-id`
-  - 若為新專案，需執行 `firebase init hosting`
+- [ ] ~~設定 Firebase 專案~~ （改用 GitHub Pages 部署，此項不再需要）
 
-- [ ] **執行 `npm install` 並驗證本地開發**
-  - `npm run dev` 確認所有元件正常渲染
-  - 確認字體載入、動畫效果、篩選功能
+- [x] ~~執行 `npm install` 並驗證本地開發~~ ✅ 已完成
 
 ---
 
@@ -34,11 +31,11 @@
   - 為已部署的專案加入 Demo 連結（`links.demo`）
   - 為有 GitHub repo 的專案加入連結（`links.github`）
 
-- [ ] **RWD 響應式優化**
-  - 目前 grid 使用 `auto-fill, minmax(320px, 1fr)`，基本可用
-  - 需要實機測試手機/平板的呈現
-  - Hero 區文字在小螢幕可能需要調整
-  - FilterBar 在手機上的橫向捲動或換行處理
+- [x] ~~RWD 響應式優化~~ ✅ 已完成
+  - 桌面版加大所有元素尺寸（卡片、字體、間距）
+  - 新增 `@media (max-width: 768px)` 行動裝置斷點
+  - Hero、FilterBar、ProjectCard、Footer 皆有 mobile 樣式
+  - Grid 改為 `minmax(400px, 1fr)`，mobile 下單欄
 
 - [ ] **SEO 基礎設定**
   - 加入 Open Graph meta tags（og:title, og:description, og:image）
@@ -94,9 +91,10 @@
   - 用 Playwright/Puppeteer 自動開啟各專案的 dev server
   - 截取首頁畫面存入 `public/screenshots/`
 
-- [ ] **部署 CI/CD**
-  - GitHub Actions：push 到 main 自動 build + deploy
-  - 或整合到現有的 Release 專案流程
+- [x] ~~部署 CI/CD~~ ✅ 已完成
+  - GitHub Actions：push 到 master 自動 build + deploy 到 GitHub Pages
+  - Workflow: `.github/workflows/deploy.yml`
+  - 網址：https://miumiubaby-hub.github.io/portfolio-site/
 
 - [ ] **Analytics 追蹤**
   - 加入 Google Analytics 或 Plausible
@@ -122,6 +120,14 @@
 - [x] README 維護指南
 - [x] CLAUDE.md 對話記錄與架構文件
 - [x] ROADMAP.md（本文件）
+- [x] 桌面版視覺加大（卡片、字體、間距全面提升）
+- [x] 行動裝置響應式設計（768px 斷點）
+- [x] 精簡專案清單：27 → 18 個（移除非展示項目）
+- [x] 新增 Icon Generator 專案
+- [x] 加入 9 個專案版本號（從 package.json 掃描）
+- [x] 修正 Bridgify Mobile 技術棧為 Flutter/Dart
+- [x] GitHub Pages 部署（GitHub Actions CI/CD）
+- [x] Port Registry 確認（portfolio-site → 3001）
 
 ---
 
@@ -129,8 +135,8 @@
 
 | 版本 | 里程碑 | 狀態 |
 |------|--------|------|
-| v1.0 | 基本作品集上線（校對內容 + 部署） | 🔴 待完成 |
+| v1.0 | 基本作品集上線（校對內容 + 部署） | ✅ 已完成 |
 | v1.1 | 加入截圖與連結 | 🟡 規劃中 |
-| v1.2 | RWD 優化 + SEO | 🟡 規劃中 |
+| v1.2 | SEO 優化 | 🟡 規劃中 |
 | v2.0 | 搜尋 + 專案詳情頁 + 主題切換 | 🟢 未來 |
 | v3.0 | i18n + 統計儀表板 + CMS | 🔵 遠期 |
