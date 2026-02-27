@@ -1,0 +1,21 @@
+.footer {
+  padding: 32px 24px;
+  border-top: 1px solid rgba(51, 65, 85, 0.2);
+  text-align: center;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-dim);
+  letter-spacing: 0.5px;
+}
+
+.dot {
+  color: #334155;
+}

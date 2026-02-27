@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --color-bg: #0a0e1a;
+  --color-surface: rgba(15, 23, 42, 0.9);
+  --color-surface-hover: rgba(15, 23, 42, 0.6);
+  --color-border: rgba(51, 65, 85, 0.4);
+  --color-border-light: rgba(51, 65, 85, 0.3);
+  --color-text: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-text-dim: #475569;
+  --color-accent: #8b5cf6;
+  --color-accent-light: #c4b5fd;
+  --color-accent-mid: #a78bfa;
+  --color-blue: #3b82f6;
+  --color-cyan: #06b6d4;
+  --font-serif: 'Instrument Serif', serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.fade-up {
+  animation: fadeUp 0.5s ease both;
+}
+
+/* ── Reusable ── */
+.icon-float { animation: float 3s ease-in-out infinite; }
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-accent-light), #818cf8, #60a5fa);
+  background-size: 200% 200%;
+  animation: gradientMove 4s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
