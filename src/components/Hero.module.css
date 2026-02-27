@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 72px 24px 48px;
+  padding: 88px 40px 56px;
   text-align: center;
   overflow: hidden;
 }
@@ -28,11 +28,11 @@
 
 .label {
   font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 4px;
+  font-size: 13px;
+  letter-spacing: 5px;
   color: var(--color-accent);
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -45,37 +45,37 @@
 }
 
 .subtitle {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--color-text-secondary);
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 .stats {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin-top: 36px;
+  gap: 56px;
+  margin-top: 44px;
 }
 
 .stat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 }
 
 .statNum {
   font-family: var(--font-serif);
-  font-size: 32px;
+  font-size: 40px;
   color: #f8fafc;
   font-style: italic;
 }
 
 .statLabel {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12px;
   color: var(--color-text-muted);
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -86,4 +86,35 @@
   height: 1px;
   background: linear-gradient(90deg, transparent, #334155, transparent);
   margin: 40px auto 0;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .hero {
+    padding: 56px 20px 36px;
+  }
+
+  .label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    max-width: 320px;
+  }
+
+  .stats {
+    gap: 28px;
+    margin-top: 28px;
+  }
+
+  .statNum {
+    font-size: 28px;
+  }
+
+  .statLabel {
+    font-size: 9px;
+  }
 }

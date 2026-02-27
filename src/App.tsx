@@ -27,12 +27,13 @@ export default function App() {
         projects={projects}
         onSelect={setActiveCategory}
       />
-      <main style={{ padding: '40px 24px 80px', maxWidth: 1200, margin: '0 auto' }}>
+      <main className="portfolio-main" style={{ padding: '48px 40px 100px', maxWidth: 1400, margin: '0 auto' }}>
         <div
+          className="portfolio-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-            gap: 20,
+            gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))',
+            gap: 28,
           }}
         >
           {filtered.map((project, i) => (
