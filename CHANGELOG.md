@@ -4,6 +4,17 @@
 
 ---
 
+## [1.0.1] — 2026-02-28
+
+### 專案資料更新
+- 更新 Multi Firebase Admin 專案資訊（根據實際原始碼校正）
+  - tagline：多 Firebase 專案管理面板 → 多 Firebase 專案統一使用者管理後台
+  - description：補充跨專案搜尋、帳號操作、Custom Claims、稽核紀錄、RBAC、Google OAuth、Cloud Run 等實際功能
+  - tech：更新為 React 18、TypeScript、Tailwind CSS、Express.js、Firebase Admin SDK、Cloud Run
+  - version：v0.5.0 → v0.9.0
+
+---
+
 ## [1.0.0] — 2026-02-28
 
 ### 視覺優化

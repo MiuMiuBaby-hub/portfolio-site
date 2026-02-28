@@ -128,6 +128,7 @@
 - [x] 修正 Bridgify Mobile 技術棧為 Flutter/Dart
 - [x] GitHub Pages 部署（GitHub Actions CI/CD）
 - [x] Port Registry 確認（portfolio-site → 3001）
+- [x] 更新 Multi Firebase Admin 專案資訊（根據實際原始碼校正 tagline、description、tech、version）
 
 ---
 
