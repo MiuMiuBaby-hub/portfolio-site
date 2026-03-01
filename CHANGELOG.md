@@ -4,6 +4,25 @@
 
 ---
 
+## [1.0.2] — 2026-03-01
+
+### 專案資料更新
+- 更新 TWNCrypto 專案資訊（根據實際原始碼校正）
+  - tagline：台灣加密貨幣資訊追蹤 → 注音聲母縮寫轉換器
+  - description：完整改寫為 Gemini AI 注音聲母轉換、自動轉換、歷史紀錄、Token 追蹤、CSV 匯出、Google Sheets 同步
+  - tech：React, Crypto API, Charts → React 19, TypeScript, Vite, Google Gemini AI, Tailwind CSS
+  - category：個人與實用 → AI 與數據
+  - version：新增 v1.1.0
+  - icon：₿ → ㄅ
+- 更新 Bridgify 專案資訊（根據實際原始碼校正）
+  - tagline：跨平台資料橋接服務 → 雲端聯絡人管理與團隊協作平台
+  - description：完整改寫為企業級聯絡人管理系統，含 RBAC、Typesense 搜尋、AES-256 加密、2FA、匯入匯出、AI 名片解析
+  - tech：React, API, WebSocket → React 19, TypeScript, Vite, Tailwind CSS, Firebase, Cloud Functions, Google Gemini AI, Typesense
+  - category：連接與通訊 → 企業管理
+  - icon：🌉 → 📇
+
+---
+
 ## [1.0.1] — 2026-02-28
 
 ### 專案資料更新

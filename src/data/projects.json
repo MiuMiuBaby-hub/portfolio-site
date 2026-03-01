@@ -126,13 +126,13 @@
   {
     "id": "bridgify",
     "name": "Bridgify",
-    "tagline": "跨平台資料橋接服務",
-    "description": "在不同系統與平台間建立數據橋樑，支援即時同步、格式轉換與 API 整合。",
-    "tech": ["React", "API", "WebSocket"],
-    "category": "連接與通訊",
+    "tagline": "雲端聯絡人管理與團隊協作平台",
+    "description": "企業級聯絡人管理系統，支援多組織團隊協作、RBAC 權限控制、Typesense 全文搜尋、AES-256 端對端加密、2FA 雙因子驗證、CSV/Excel/vCard 匯入匯出、重複偵測合併，以及 Google Gemini AI 名片智慧解析。",
+    "tech": ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Firebase", "Cloud Functions", "Google Gemini AI", "Typesense"],
+    "category": "企業管理",
     "status": "active",
     "folder": "Bridgify",
-    "icon": "🌉",
+    "icon": "📇",
     "links": {},
     "screenshot": ""
   },
@@ -236,13 +236,14 @@
   {
     "id": "twncrypto",
     "name": "TWNCrypto",
-    "tagline": "台灣加密貨幣資訊追蹤",
-    "description": "追蹤加密貨幣即時價格、台幣匯率換算與投資組合管理，專為台灣使用者設計。",
-    "tech": ["React", "Crypto API", "Charts"],
-    "category": "個人與實用",
+    "tagline": "注音聲母縮寫轉換器",
+    "description": "將中文文字轉換為注音首字縮寫（聲母），利用 Google Gemini AI 進行智能多音字語意判斷。支援自動轉換、歷史紀錄管理、Token 用量追蹤、CSV 匯出與 Google Sheets 同步。",
+    "tech": ["React 19", "TypeScript", "Vite", "Google Gemini AI", "Tailwind CSS"],
+    "category": "AI 與數據",
     "status": "active",
+    "version": "v1.1.0",
     "folder": "TWNCrypto",
-    "icon": "₿",
+    "icon": "ㄅ",
     "links": {},
     "screenshot": ""
   }

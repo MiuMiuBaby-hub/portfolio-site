@@ -1,6 +1,6 @@
 # ROADMAP & TODO
 
-> 最後更新：2026-02-28
+> 最後更新：2026-03-01
 
 ---
 
@@ -129,6 +129,8 @@
 - [x] GitHub Pages 部署（GitHub Actions CI/CD）
 - [x] Port Registry 確認（portfolio-site → 3001）
 - [x] 更新 Multi Firebase Admin 專案資訊（根據實際原始碼校正 tagline、description、tech、version）
+- [x] 更新 TWNCrypto 專案資訊（原誤為加密貨幣追蹤，實為注音聲母縮寫轉換器，校正 tagline、description、tech、category、version、icon）
+- [x] 更新 Bridgify 專案資訊（原誤為跨平台橋接，實為雲端聯絡人管理系統，校正 tagline、description、tech、category、icon）
 
 ---
 
