@@ -2,6 +2,7 @@ export interface ProjectLinks {
   demo?: string;
   github?: string;
   docs?: string;
+  skill?: string;
 }
 
 export interface Project {

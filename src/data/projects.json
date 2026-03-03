@@ -176,7 +176,8 @@
     "folder": "YProtocol",
     "icon": "📡",
     "links": {
-      "demo": "https://y-protocol.web.app"
+      "demo": "https://y-protocol.web.app",
+      "skill": "https://github.com/MiuMiuBaby-hub/claude-skill-fetch-channel"
     },
     "screenshot": ""
   },

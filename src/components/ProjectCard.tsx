@@ -89,6 +89,12 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 📖 Docs
               </a>
             )}
+            {project.links.skill && (
+              <a href={project.links.skill} target="_blank" rel="noopener" className={styles.link}
+                onClick={(e) => e.stopPropagation()}>
+                🧩 Skill
+              </a>
+            )}
           </div>
         )}
       </div>
