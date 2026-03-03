@@ -167,15 +167,17 @@
   {
     "id": "yprotocol",
     "name": "YProtocol",
-    "tagline": "自訂通訊協議框架",
-    "description": "輕量級的自訂通訊協議實作，用於裝置間的結構化數據傳輸與命令控制。",
-    "tech": ["TypeScript", "Protocol", "Networking"],
-    "category": "連接與通訊",
+    "tagline": "Web-based 開發者 Debug 分享工具",
+    "description": "即時分享截圖、Console 訊息與檔案的 Debug 協作工具。支援 AES-256-GCM 端對端加密、Fabric.js 截圖標註、PWA 離線安裝、CLI 工具，以及 Claude Code Skill 自動分析修正整合。",
+    "tech": ["HTML5", "ES6+", "Vite", "Firebase", "AES-256-GCM", "Fabric.js", "CLI"],
+    "category": "開發者工具",
     "status": "active",
-    "version": "v1.0.0",
+    "version": "v3.0.3",
     "folder": "YProtocol",
     "icon": "📡",
-    "links": {},
+    "links": {
+      "demo": "https://y-protocol.web.app"
+    },
     "screenshot": ""
   },
   {

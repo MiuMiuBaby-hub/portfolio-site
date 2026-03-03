@@ -4,6 +4,24 @@
 
 ---
 
+## [1.0.3] — 2026-03-03
+
+### 專案資料更新
+- 更新 YProtocol 專案資訊（根據實際原始碼校正）
+  - tagline：自訂通訊協議框架 → Web-based 開發者 Debug 分享工具
+  - description：完整改寫為即時分享截圖/Console 訊息/檔案的 Debug 協作工具，含 E2E 加密、截圖標註、PWA、CLI、Claude Code Skill 整合
+  - tech：TypeScript, Protocol, Networking → HTML5, ES6+, Vite, Firebase, AES-256-GCM, Fabric.js, CLI
+  - category：連接與通訊 → 開發者工具
+  - version：v1.0.0 → v3.0.3
+  - links：新增 demo 連結 https://y-protocol.web.app
+
+### YProtocol README 更新
+- 在 YProtocol 的 README.md 加入「Claude Code Skill — Fetch Channel」段落
+  - 連結至 GitHub repo: MiuMiuBaby-hub/claude-skill-fetch-channel
+  - 說明 Skill 功能、使用方式（含 autofix、私人/加密頻道參數）與安裝方式
+
+---
+
 ## [1.0.2] — 2026-03-01
 
 ### 專案資料更新
