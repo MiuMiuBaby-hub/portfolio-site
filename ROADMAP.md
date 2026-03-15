@@ -1,6 +1,6 @@
 # ROADMAP & TODO
 
-> 最後更新：2026-03-03
+> 最後更新：2026-03-15
 
 ---
 
@@ -133,6 +133,7 @@
 - [x] 更新 Bridgify 專案資訊（原誤為跨平台橋接，實為雲端聯絡人管理系統，校正 tagline、description、tech、category、icon）
 - [x] 更新 YProtocol 專案資訊（原誤為通訊協議框架，實為 Web-based Debug 分享工具，校正 tagline、description、tech、category、version、links）
 - [x] 在 YProtocol README 加入 Claude Code Skill — Fetch Channel 段落（連結至 GitHub repo）
+- [x] 新增 StateGrid AI 專案（AI 驅動專案狀態管理系統，v0.4.0，企業管理分類）
 
 ---
 

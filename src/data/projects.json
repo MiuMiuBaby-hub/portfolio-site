@@ -249,5 +249,19 @@
     "icon": "ㄅ",
     "links": {},
     "screenshot": ""
+  },
+  {
+    "id": "stategrid-ai",
+    "name": "StateGrid AI",
+    "tagline": "AI 驅動的專案狀態管理系統",
+    "description": "以 AI 解析會議紀錄，自動萃取事實並覆寫過時資料，維持專案 metadata 為最新狀態。支援雙視圖模式（卡片/表格）、Smart Paste 智慧貼上、Gemini 2.5 Flash 差異比對、欄位級 Diff Review、部門分組、Team Roster 管理與 PWA 離線安裝。",
+    "tech": ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Zustand", "Firebase", "Supabase", "Google Gemini AI"],
+    "category": "企業管理",
+    "status": "active",
+    "version": "v0.4.0",
+    "folder": "StateGrid AI",
+    "icon": "⚡",
+    "links": {},
+    "screenshot": ""
   }
 ]
