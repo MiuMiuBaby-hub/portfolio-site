@@ -4,6 +4,18 @@
 
 ---
 
+## [1.0.4] — 2026-03-18
+
+### 新增專案
+- 新增 HRCalc 專案至 portfolio
+  - tagline：彈性班出勤計算器
+  - description：互動式出勤計算工具，可拖曳時間軸設定上下班與請假時段，自動計算假勤時數（含午休扣除邏輯），支援上午/下午請假模式切換
+  - tech：React 19, TypeScript, Vite, Tailwind CSS
+  - category：個人與實用
+  - icon：⏰
+
+---
+
 ## [1.0.3] — 2026-03-03
 
 ### 專案資料更新

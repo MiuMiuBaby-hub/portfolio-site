@@ -263,5 +263,18 @@
     "icon": "⚡",
     "links": {},
     "screenshot": ""
+  },
+  {
+    "id": "hrcalc",
+    "name": "HRCalc",
+    "tagline": "彈性班出勤計算器",
+    "description": "為彈性班制員工設計的互動式出勤計算工具。透過可拖曳時間軸設定上下班與請假時段，自動計算假勤時數（含午休扣除邏輯），支援上午/下午請假模式切換與即時視覺化反饋。",
+    "tech": ["React 19", "TypeScript", "Vite", "Tailwind CSS"],
+    "category": "個人與實用",
+    "status": "active",
+    "folder": "HRCalc",
+    "icon": "⏰",
+    "links": {},
+    "screenshot": ""
   }
 ]
