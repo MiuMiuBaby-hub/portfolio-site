@@ -4,6 +4,14 @@
 
 ---
 
+## [1.0.6] — 2026-03-29
+
+### 連結更新
+- 為 BOM Review Assistant 新增 demo 連結：https://bom-review-assistant.pages.dev/
+- 在 README.md 頂部新增 Live Demo 連結：https://miumiubaby-hub.github.io/portfolio-site/
+
+---
+
 ## [1.0.5] — 2026-03-29
 
 ### 新增專案

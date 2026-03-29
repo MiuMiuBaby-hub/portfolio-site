@@ -67,7 +67,9 @@
     "status": "active",
     "folder": "bom-review-assistant",
     "icon": "🔍",
-    "links": {},
+    "links": {
+      "demo": "https://bom-review-assistant.pages.dev/"
+    },
     "screenshot": ""
   },
   {
