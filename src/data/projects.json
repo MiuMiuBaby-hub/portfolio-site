@@ -274,7 +274,9 @@
     "status": "active",
     "folder": "S1-S6 Check List",
     "icon": "✅",
-    "links": {},
+    "links": {
+      "demo": "https://s1s6-audit.web.app"
+    },
     "screenshot": ""
   },
   {
