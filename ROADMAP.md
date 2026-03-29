@@ -1,6 +1,6 @@
 # ROADMAP & TODO
 
-> 最後更新：2026-03-18
+> 最後更新：2026-03-29
 
 ---
 
@@ -135,6 +135,8 @@
 - [x] 在 YProtocol README 加入 Claude Code Skill — Fetch Channel 段落（連結至 GitHub repo）
 - [x] 新增 StateGrid AI 專案（AI 驅動專案狀態管理系統，v0.4.0，企業管理分類）
 - [x] 新增 HRCalc 專案（彈性班出勤計算器，個人與實用分類）
+- [x] 新增 YProtocol `links.skill` 連結類型（ProjectCard 支援顯示 Claude Code Skill 連結）
+- [x] 新增 S1-S6 Check List 專案（產品開發階段文件合規性稽核工具，工程工具分類）
 
 ---
 
@@ -143,6 +145,7 @@
 | 版本 | 里程碑 | 狀態 |
 |------|--------|------|
 | v1.0 | 基本作品集上線（校對內容 + 部署） | ✅ 已完成 |
+| v1.0.5 | 新增 S1-S6 Check List 專案 | ✅ 已完成 |
 | v1.1 | 加入截圖與連結 | 🟡 規劃中 |
 | v1.2 | SEO 優化 | 🟡 規劃中 |
 | v2.0 | 搜尋 + 專案詳情頁 + 主題切換 | 🟢 未來 |

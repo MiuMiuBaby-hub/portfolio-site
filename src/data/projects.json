@@ -265,6 +265,19 @@
     "screenshot": ""
   },
   {
+    "id": "s1s6-checklist",
+    "name": "S1-S6 Check List",
+    "tagline": "產品開發階段文件合規性稽核工具",
+    "description": "驗證產品各開發階段（S1~S6）的必存文件是否齊全，自動比對主機種／衍生機種的文件規則，輸出標色 Excel 稽核報表（已存入：綠色、缺必存：粉紫色、缺非必存：黃色）。支援雲端上傳兩份 Excel 並下載結果。",
+    "tech": ["React", "TypeScript", "Excel Processing", "Web App"],
+    "category": "工程工具",
+    "status": "active",
+    "folder": "S1-S6 Check List",
+    "icon": "✅",
+    "links": {},
+    "screenshot": ""
+  },
+  {
     "id": "hrcalc",
     "name": "HRCalc",
     "tagline": "彈性班出勤計算器",

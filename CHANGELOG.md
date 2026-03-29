@@ -4,6 +4,18 @@
 
 ---
 
+## [1.0.5] — 2026-03-29
+
+### 新增專案
+- 新增 S1-S6 Check List 專案至 portfolio
+  - tagline：產品開發階段文件合規性稽核工具
+  - description：驗證 S1~S6 各開發階段必存文件是否齊全，自動比對主機種/衍生機種規則，輸出三色標記 Excel 稽核報表（綠/粉紫/黃）
+  - tech：React, TypeScript, Excel Processing, Web App
+  - category：工程工具
+  - icon：✅
+
+---
+
 ## [1.0.4] — 2026-03-18
 
 ### 新增專案
