@@ -291,7 +291,9 @@
     "status": "active",
     "folder": "HRCalc",
     "icon": "⏰",
-    "links": {},
+    "links": {
+      "demo": "https://hrcalc-25a05.web.app"
+    },
     "screenshot": ""
   }
 ]

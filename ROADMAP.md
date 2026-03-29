@@ -139,6 +139,7 @@
 - [x] 新增 S1-S6 Check List 專案（產品開發階段文件合規性稽核工具，工程工具分類）
 - [x] 為 BOM Review Assistant 新增 demo 連結（https://bom-review-assistant.pages.dev/）
 - [x] 在 README.md 新增 Live Demo 連結（https://miumiubaby-hub.github.io/portfolio-site/）
+- [x] 為 HRCalc 新增 demo 連結（https://hrcalc-25a05.web.app）
 
 ---
 
@@ -149,6 +150,7 @@
 | v1.0 | 基本作品集上線（校對內容 + 部署） | ✅ 已完成 |
 | v1.0.5 | 新增 S1-S6 Check List 專案 | ✅ 已完成 |
 | v1.0.6 | BOM Review demo 連結 + README Live Demo | ✅ 已完成 |
+| v1.0.7 | HRCalc demo 連結 | ✅ 已完成 |
 | v1.1 | 加入截圖與連結 | 🟡 規劃中 |
 | v1.2 | SEO 優化 | 🟡 規劃中 |
 | v2.0 | 搜尋 + 專案詳情頁 + 主題切換 | 🟢 未來 |
