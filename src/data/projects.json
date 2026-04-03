@@ -7,7 +7,7 @@
     "tech": ["React 19", "TypeScript", "Firebase", "Vite"],
     "category": "企業管理",
     "status": "active",
-    "version": "v2.46.0",
+    "version": "v2.51.0",
     "folder": "SmartGantt",
     "icon": "📊",
     "links": {
@@ -294,6 +294,20 @@
     "links": {
       "demo": "https://hrcalc-25a05.web.app"
     },
+    "screenshot": ""
+  },
+  {
+    "id": "skill-tracker",
+    "name": "SkillTracker",
+    "tagline": "Claude Code Skill 使用追蹤與分析平台",
+    "description": "本機 MCP Server，記錄 Claude Code Skill 調用次數與使用情況，儲存至 SQLite，並提供瀏覽器 Dashboard 視覺化數據。支援 Skill 掃描、metadata 分類、token 估算、版本備份 Hook 與 AI 驅動的 Skill 管理工具。",
+    "tech": ["Python", "FastMCP", "SQLite", "JavaScript", "HTML/CSS"],
+    "category": "開發者工具",
+    "status": "active",
+    "version": "v1.4.1",
+    "folder": "SkillTracker",
+    "icon": "📈",
+    "links": {},
     "screenshot": ""
   }
 ]

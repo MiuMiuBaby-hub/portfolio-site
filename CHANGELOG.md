@@ -4,6 +4,22 @@
 
 ---
 
+## [1.0.8] — 2026-04-04
+
+### 新增專案
+- 新增 SkillTracker 專案至 portfolio
+  - tagline：Claude Code Skill 使用追蹤與分析平台
+  - description：本機 MCP Server，記錄 Skill 調用次數，SQLite 儲存，瀏覽器 Dashboard 視覺化，支援 Skill 掃描、版本備份 Hook 與 AI Skill 管理
+  - tech：Python, FastMCP, SQLite, JavaScript, HTML/CSS
+  - category：開發者工具
+  - version：v1.4.1
+  - icon：📈
+
+### 專案版本更新
+- SmartGantt 版本更新：v2.46.0 → v2.51.0
+
+---
+
 ## [1.0.7] — 2026-03-29
 
 ### 連結更新
