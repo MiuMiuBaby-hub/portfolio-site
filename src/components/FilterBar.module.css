@@ -78,3 +78,9 @@
     padding: 1px 5px;
   }
 }
+
+/* ── Light theme ── */
+:global([data-theme="light"]) .bar {
+  background: rgba(248, 250, 252, 0.9);
+  border-bottom-color: #e2e8f0;
+}

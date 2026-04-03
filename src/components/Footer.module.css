@@ -19,3 +19,8 @@
 .dot {
   color: #334155;
 }
+
+/* ── Light theme ── */
+:global([data-theme="light"]) .dot {
+  color: #cbd5e1;
+}
