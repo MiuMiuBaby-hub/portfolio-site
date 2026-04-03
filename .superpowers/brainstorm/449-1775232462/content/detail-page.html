@@ -1,0 +1,40 @@
+<h2>專案詳情頁</h2>
+<p class="subtitle">點擊專案後要怎麼呈現完整資訊？</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>獨立路由頁面（React Router）</h3>
+      <p>點擊卡片 → 跳轉到 <code>/project/smartgantt</code>，完整頁面展示。有自己的 URL，可分享連結。按返回鍵回列表。</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul><li>可分享專案連結</li><li>空間充裕，放多張截圖</li><li>SEO 友善</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>需加 React Router</li><li>頁面跳轉感</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Modal 彈窗覆蓋</h3>
+      <p>點擊卡片 → 彈出全螢幕 modal，背景模糊。不離開頁面，點外面或按 ESC 關閉。</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul><li>不需 Router</li><li>流暢感好，不離開列表</li><li>實作簡單</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>無法分享單一專案連結</li><li>手機上 modal 體驗較差</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>獨立路由 + URL 可分享（推薦）</h3>
+      <p>用 React Router，但加入滑入動畫（slide transition），兼顧獨立頁面的優點和流暢體驗。URL hash 模式（<code>#/project/smartgantt</code>）不需後端設定。</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul><li>可分享連結</li><li>動畫過場流暢</li><li>GitHub Pages 相容（hash router）</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>需加 React Router</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>

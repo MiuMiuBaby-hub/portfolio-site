@@ -1,0 +1,40 @@
+<h2>架構方案</h2>
+<p class="subtitle">如何將三個功能整合進現有專案？</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>漸進式整合（推薦）</h3>
+      <p>保留現有元件結構，逐步加入新功能。改動最小，風險最低。</p>
+      <ul style="font-size:13px;color:#94a3b8;margin-top:8px">
+        <li><strong>路由：</strong>HashRouter 包住 App，列表頁 <code>#/</code> + 詳情頁 <code>#/project/:id</code></li>
+        <li><strong>搜尋：</strong>新增 SearchBar 元件，插在 FilterBar 上方，搜尋狀態提升到 App</li>
+        <li><strong>主題：</strong>ThemeToggle 元件 + CSS 變數切換（<code>[data-theme="light"]</code>），localStorage 記住偏好</li>
+        <li><strong>詳情頁：</strong>新增 ProjectDetail 元件，從 projects.json 取資料</li>
+        <li><strong>動畫：</strong>CSS transition 處理頁面切換（無需額外動畫庫）</li>
+      </ul>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul><li>改動集中，現有元件幾乎不動</li><li>不引入多餘依賴（只加 react-router-dom）</li><li>可分步驟完成</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>CSS 變數需手動定義 light 版本</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Context + 全域狀態重構</h3>
+      <p>引入 React Context 統一管理 theme / search / filter 狀態，元件透過 hook 取值。</p>
+      <ul style="font-size:13px;color:#94a3b8;margin-top:8px">
+        <li><strong>AppContext：</strong>統一管理 theme、searchQuery、activeCategory</li>
+        <li><strong>useTheme / useSearch：</strong>自訂 hook 存取狀態</li>
+        <li>其餘路由、元件同方案 A</li>
+      </ul>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul><li>狀態管理更結構化</li><li>未來擴充容易</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>現階段只有 3 個狀態，Context 偏重</li><li>改動範圍較大</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>

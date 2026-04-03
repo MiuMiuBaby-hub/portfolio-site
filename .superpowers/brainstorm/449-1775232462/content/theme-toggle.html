@@ -1,0 +1,75 @@
+<h2>主題切換</h2>
+<p class="subtitle">亮色主題的風格偏好？</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>純白底 + 保留紫藍 accent</h3>
+      <p>背景改為白色，accent 顏色維持現有的紫藍漸層，文字改深色。經典對比風格。</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-body" style="background:#ffffff;padding:16px;border-radius:8px">
+          <div style="font-size:18px;font-style:italic;color:#1e293b;margin-bottom:8px">MiuMiu Dev Works</div>
+          <div style="display:flex;gap:8px;margin-bottom:12px">
+            <span style="padding:4px 12px;background:#8b5cf6;border-radius:16px;color:#fff;font-size:12px">全部</span>
+            <span style="padding:4px 12px;background:#f1f5f9;border-radius:16px;color:#64748b;font-size:12px">企業管理</span>
+          </div>
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px">
+            <div style="font-size:14px;color:#1e293b;font-weight:600">📊 SmartGantt</div>
+            <div style="font-size:12px;color:#64748b;margin-top:4px">企業級 AI 專案管理工具</div>
+            <div style="display:flex;gap:4px;margin-top:6px">
+              <span style="padding:2px 8px;background:#ede9fe;color:#7c3aed;border-radius:4px;font-size:10px;font-family:monospace">React 19</span>
+              <span style="padding:2px 8px;background:#ede9fe;color:#7c3aed;border-radius:4px;font-size:10px;font-family:monospace">TypeScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>淺灰底 + 柔和 accent</h3>
+      <p>背景為淺灰色（#f8fafc），accent 調淡成更柔和的紫色，整體溫和不刺眼。</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-body" style="background:#f8fafc;padding:16px;border-radius:8px">
+          <div style="font-size:18px;font-style:italic;color:#334155;margin-bottom:8px">MiuMiu Dev Works</div>
+          <div style="display:flex;gap:8px;margin-bottom:12px">
+            <span style="padding:4px 12px;background:#a78bfa;border-radius:16px;color:#fff;font-size:12px">全部</span>
+            <span style="padding:4px 12px;background:#e2e8f0;border-radius:16px;color:#64748b;font-size:12px">企業管理</span>
+          </div>
+          <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,0.05)">
+            <div style="font-size:14px;color:#334155;font-weight:600">📊 SmartGantt</div>
+            <div style="font-size:12px;color:#64748b;margin-top:4px">企業級 AI 專案管理工具</div>
+            <div style="display:flex;gap:4px;margin-top:6px">
+              <span style="padding:2px 8px;background:#f1f0ff;color:#6d28d9;border-radius:4px;font-size:10px;font-family:monospace">React 19</span>
+              <span style="padding:2px 8px;background:#f1f0ff;color:#6d28d9;border-radius:4px;font-size:10px;font-family:monospace">TypeScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:24px">
+  <h3>切換按鈕位置</h3>
+  <p class="subtitle">Toggle 放在哪？</p>
+  <div class="options">
+    <div class="option" data-choice="top-right" onclick="toggleSelect(this)">
+      <div class="letter">1</div>
+      <div class="content">
+        <h3>右上角（Header / Hero 區）</h3>
+        <p>🌙/☀️ icon 按鈕，固定在頁面右上角</p>
+      </div>
+    </div>
+    <div class="option" data-choice="footer" onclick="toggleSelect(this)">
+      <div class="letter">2</div>
+      <div class="content">
+        <h3>Footer 區</h3>
+        <p>不搶視覺焦點，放在頁尾作為次要功能</p>
+      </div>
+    </div>
+  </div>
+</div>

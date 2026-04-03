@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd //c \"dir \"\"C:\\\\My Source\"\" /b\")",
+      "Bash(bash:*)",
+      "Skill(neo-design-system)"
+    ]
+  }
+}
