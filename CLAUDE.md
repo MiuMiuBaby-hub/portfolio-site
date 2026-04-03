@@ -7,8 +7,10 @@
 ## 📌 專案概述
 
 **用途**：個人作品集網站，展示 `C:\My Source` 下的所有開發專案。  
-**技術棧**：Vite + React 19 + TypeScript + CSS Modules  
-**部署目標**：Firebase Hosting  
+**技術棧**：Vite + React 19 + TypeScript + CSS Modules + react-router-dom v7  
+**部署目標**：GitHub Pages（GitHub Actions CI/CD）  
+**版本**：v2.0.0  
+**線上網址**：https://miumiubaby-hub.github.io/portfolio-site/  
 **專案位置**：`C:\My Source\portfolio-site`
 
 ---
@@ -22,15 +24,20 @@ portfolio-site/
 ├── src/
 │   ├── data/
 │   │   └── projects.json       ← ★ 核心資料檔（唯一需要維護的檔案）
+│   ├── contexts/
+│   │   └── AppContext.tsx       ← 全域狀態（theme/search/filter）+ hooks
 │   ├── components/
-│   │   ├── Hero.tsx + .module.css        ← 頂部標題區（含統計數字）
-│   │   ├── FilterBar.tsx + .module.css   ← 分類篩選列（sticky）
-│   │   ├── ProjectCard.tsx + .module.css ← 專案卡片（可展開）
-│   │   └── Footer.tsx + .module.css      ← 頁尾
+│   │   ├── Hero.tsx + .module.css          ← 頂部標題區（含統計數字）
+│   │   ├── SearchBar.tsx + .module.css     ← 搜尋框（FilterBar 上方）
+│   │   ├── FilterBar.tsx + .module.css     ← 分類篩選列（sticky，用 context）
+│   │   ├── ProjectCard.tsx + .module.css   ← 專案卡片（展開 + 查看詳情按鈕）
+│   │   ├── ProjectDetail.tsx + .module.css ← 專案詳情頁（#/project/:id）
+│   │   ├── ThemeToggle.tsx + .module.css   ← 右上角主題切換按鈕
+│   │   └── Footer.tsx + .module.css        ← 頁尾
 │   ├── styles/
-│   │   └── global.css          ← 全域樣式、CSS 變數、動畫、字體載入
+│   │   └── global.css          ← 全域樣式、CSS 變數（含 light theme）、動畫
 │   ├── types.ts                ← Project 型別定義、STATUS_CONFIG
-│   ├── App.tsx                 ← 主程式（狀態管理、篩選邏輯）
+│   ├── App.tsx                 ← 主程式（HashRouter + AppProvider + Routes）
 │   ├── main.tsx                ← React 入口點
 │   └── vite-env.d.ts           ← Vite + CSS Modules 型別宣告
 ├── firebase.json               ← Firebase Hosting 設定（SPA rewrite）
@@ -46,16 +53,21 @@ portfolio-site/
 - **分類自動化**：`category` 欄位的唯一值自動產生篩選按鈕，無需改 code
 - **元件化**：每個區塊獨立 component + CSS Module，互不干擾
 - **CSS 變數**：顏色主題集中在 `global.css` 的 `:root`，方便全局調整
+- **全域狀態**：React Context（AppContext）管理 theme / searchQuery / activeCategory
+- **路由**：HashRouter（`#/` 列表頁、`#/project/:id` 詳情頁），GitHub Pages 相容
 
 ### 設計風格
 
-- **深色主題**：`#0a0e1a` 背景 + 紫藍漸層 accent
+- **深色/淺色雙主題**：
+  - 深色：`#0a0e1a` 背景 + 紫藍漸層 accent
+  - 淺色：`#f8fafc` 背景 + 柔和紫 accent（`[data-theme="light"]` CSS 變數覆寫）
+  - 右上角 ☀️/🌙 toggle，localStorage 記住偏好
 - **三字體組合**：
   - Instrument Serif — 標題（優雅 serif）
   - DM Sans — 內文（現代 sans）
   - JetBrains Mono — 標籤/代碼/狀態（monospace）
-- **動畫**：fadeUp 入場、卡片懸浮上移、icon 浮動、漸層流動
-- **互動**：卡片點擊展開詳情、tech tag hover 變色
+- **動畫**：fadeUp 入場、卡片懸浮上移、icon 浮動、漸層流動、詳情頁 slideInFromRight
+- **互動**：卡片點擊展開詳情 + 「查看詳情 →」按鈕跳轉、搜尋即時過濾、tech tag hover 變色
 
 ---
 
