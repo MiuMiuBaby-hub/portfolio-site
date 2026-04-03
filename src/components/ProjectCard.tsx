@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import type { Project } from '../types';
 import { STATUS_CONFIG } from '../types';
 import styles from './ProjectCard.module.css';
@@ -14,6 +15,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
   const status = STATUS_CONFIG[project.status];
 
   const hasLinks = project.links && Object.values(project.links).some(Boolean);
+  const navigate = useNavigate();
 
   return (
     <article
@@ -97,6 +99,17 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             )}
           </div>
         )}
+
+        {/* Detail page link */}
+        <button
+          className={styles.detailLink}
+          onClick={(e) => {
+            e.stopPropagation();
+            navigate(`/project/${project.id}`);
+          }}
+        >
+          查看詳情 →
+        </button>
       </div>
 
       {/* Tech tags */}

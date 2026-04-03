@@ -255,6 +255,28 @@
   }
 }
 
+.detailLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 8px 20px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-accent-light);
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.detailLink:hover {
+  background: rgba(139, 92, 246, 0.2);
+  transform: translateX(4px);
+}
+
 /* ── Light theme adjustments ── */
 :global([data-theme="light"]) .card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
