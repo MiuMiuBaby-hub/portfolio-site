@@ -46,20 +46,21 @@
 
 ## 🟢 P2 — 功能增強
 
-- [ ] **搜尋功能**
-  - 在 FilterBar 旁加入搜尋框
+- [x] ~~**搜尋功能**~~ ✅ 已完成
+  - 獨立一行全寬搜尋框（FilterBar 上方）
   - 搜尋範圍：name、tagline、description、tech
-  - 即時過濾卡片
+  - 即時過濾卡片 + 清除按鈕 + 無結果提示
 
-- [ ] **專案詳情頁**
-  - 目前是展開式卡片，可考慮改為獨立路由頁面
-  - 加入 React Router
-  - 每個專案有完整頁面，包含多張截圖、完整說明、技術架構圖
+- [x] ~~**專案詳情頁**~~ ✅ 已完成
+  - HashRouter 路由 `#/project/:id`
+  - 滑入動畫（slideInFromRight）
+  - 完整頁面：icon、版本、狀態、截圖、描述、技術棧、連結
+  - 卡片保留展開 + 新增「查看詳情 →」按鈕
 
-- [ ] **深色/淺色主題切換**
-  - 目前只有深色主題
-  - 加入 toggle 按鈕
-  - 利用 CSS 變數切換 `:root` 值
+- [x] ~~**深色/淺色主題切換**~~ ✅ 已完成
+  - 右上角固定 ☀️/🌙 toggle
+  - CSS 變數 `[data-theme="light"]` 覆寫
+  - localStorage + 系統偏好偵測
 
 - [ ] **技術標籤篩選**
   - 除了分類篩選，加入依技術標籤過濾
@@ -142,6 +143,11 @@
 - [x] 為 HRCalc 新增 demo 連結（https://hrcalc-25a05.web.app）
 - [x] 新增 SkillTracker 專案（Claude Code Skill 使用追蹤與分析平台，開發者工具分類，v1.4.1）
 - [x] 更新 SmartGantt 版本 v2.46.0 → v2.51.0
+- [x] v2.0：搜尋功能（全寬搜尋框 + 即時過濾 + 清除按鈕）
+- [x] v2.0：專案詳情頁（HashRouter + 滑入動畫 + 404 處理）
+- [x] v2.0：深色/淺色主題切換（右上角 toggle + localStorage + 系統偏好）
+- [x] v2.0：React Context 全域狀態管理（theme / searchQuery / activeCategory）
+- [x] v2.0：FilterBar 改用 useFilter context hook
 
 ---
 
@@ -156,5 +162,5 @@
 | v1.0.8 | 新增 SkillTracker + 更新 SmartGantt 版本 | ✅ 已完成 |
 | v1.1 | 加入截圖與連結 | 🟡 規劃中 |
 | v1.2 | SEO 優化 | 🟡 規劃中 |
-| v2.0 | 搜尋 + 專案詳情頁 + 主題切換 | 🟢 未來 |
+| v2.0 | 搜尋 + 專案詳情頁 + 主題切換 | ✅ 已完成 |
 | v3.0 | i18n + 統計儀表板 + CMS | 🔵 遠期 |

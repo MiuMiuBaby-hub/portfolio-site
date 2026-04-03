@@ -4,6 +4,25 @@
 
 ---
 
+## [2.0.0] — 2026-04-04
+
+### 新功能
+- 搜尋功能：全寬搜尋框，即時過濾專案（搜尋 name/tagline/description/tech），支援清除按鈕
+- 專案詳情頁：HashRouter 路由 `#/project/:id`，滑入動畫，完整專案資訊頁面，404 處理
+- 深色/淺色主題切換：右上角固定 toggle 按鈕，localStorage 記住偏好，支援系統偏好偵測
+
+### 架構變更
+- 新增 React Context（AppContext）統一管理 theme / searchQuery / activeCategory
+- 新增 react-router-dom v7（HashRouter，GitHub Pages 相容）
+- FilterBar 改用 useFilter context hook（移除 props drilling）
+
+### 樣式調整
+- 新增 `[data-theme="light"]` CSS 變數覆寫（淺灰底 + 柔和紫 accent）
+- 修正多個元件硬編碼顏色為 CSS 變數
+- 亮色模式：卡片白底淺陰影、tech tag 淡紫底色、scrollbar 顏色適配
+
+---
+
 ## [1.0.8] — 2026-04-04
 
 ### 新增專案
