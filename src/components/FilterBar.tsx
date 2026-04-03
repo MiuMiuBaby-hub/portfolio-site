@@ -1,14 +1,15 @@
 import type { Project } from '../types';
+import { useFilter } from '../contexts/AppContext';
 import styles from './FilterBar.module.css';
 
 interface FilterBarProps {
   categories: string[];
-  activeCategory: string;
   projects: Project[];
-  onSelect: (cat: string) => void;
 }
 
-export default function FilterBar({ categories, activeCategory, projects, onSelect }: FilterBarProps) {
+export default function FilterBar({ categories, projects }: FilterBarProps) {
+  const { activeCategory, setActiveCategory } = useFilter();
+
   const count = (cat: string) =>
     cat === '全部' ? projects.length : projects.filter((p) => p.category === cat).length;
 
@@ -21,7 +22,7 @@ export default function FilterBar({ categories, activeCategory, projects, onSele
             <button
               key={cat}
               className={`${styles.btn} ${isActive ? styles.btnActive : ''}`}
-              onClick={() => onSelect(cat)}
+              onClick={() => setActiveCategory(cat)}
             >
               {cat}
               <span className={`${styles.count} ${isActive ? styles.countActive : ''}`}>
