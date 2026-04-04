@@ -148,6 +148,8 @@
 - [x] v2.0：深色/淺色主題切換（右上角 toggle + localStorage + 系統偏好）
 - [x] v2.0：React Context 全域狀態管理（theme / searchQuery / activeCategory）
 - [x] v2.0：FilterBar 改用 useFilter context hook
+- [x] v2.0：「查看詳情 →」按鈕 UI 調整（低調 pill 外框、位置在描述與 tech tags 之間）
+- [x] v2.0：CLAUDE.md 架構文件更新（新增元件、路由、Context、雙主題）
 
 ---
 

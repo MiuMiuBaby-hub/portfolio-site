@@ -20,6 +20,7 @@
 - 新增 `[data-theme="light"]` CSS 變數覆寫（淺灰底 + 柔和紫 accent）
 - 修正多個元件硬編碼顏色為 CSS 變數
 - 亮色模式：卡片白底淺陰影、tech tag 淡紫底色、scrollbar 顏色適配
+- 「查看詳情 →」按鈕：低調 pill 外框風格，位置在描述與 tech tags 之間，展開時才顯示
 
 ---
 
