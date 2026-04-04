@@ -20,6 +20,27 @@
   color: #334155;
 }
 
+.heart {
+  color: #ef4444;
+  font-size: 13px;
+}
+
+.version {
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-dim);
+  opacity: 0.4;
+  letter-spacing: 0.5px;
+  cursor: default;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.version:hover {
+  opacity: 1;
+  color: var(--color-text);
+}
+
 /* ── Light theme ── */
 :global([data-theme="light"]) .dot {
   color: #cbd5e1;

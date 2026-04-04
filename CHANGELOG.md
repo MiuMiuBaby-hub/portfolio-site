@@ -4,6 +4,28 @@
 
 ---
 
+## [2.1.0] — 2026-04-04
+
+### 新功能
+- **版本追蹤系統**：導入完整 version tracking 機制
+  - Vite build-time 注入 `__APP_VERSION__` / `__GIT_COMMIT__` / `__BUILD_DATE__`
+  - 新增 `src/lib/version.ts` 版本常數與 `checkForUpdate()` 函式
+  - Build 時自動產生 `dist/version.json`（供未來版本比對）
+  - TypeScript 型別宣告（`vite-env.d.ts`）
+  - Git Tag `v2.0.0` 建立
+
+### 樣式調整
+- Footer 底部新增版本標籤顯示（`V2.x.x · xxxx · YYYY-MM-DD` 格式）
+  - 預設低透明度 (0.4)，hover 時高亮顯示 (opacity 1 + 亮色文字)
+  - Hover tooltip 顯示完整 Version / Commit / Build 時間
+- Footer「♥」改為高亮紅色 (`#ef4444`)
+
+### Files Changed
+- **New**: `src/lib/version.ts`
+- **Modified**: `vite.config.ts`, `src/vite-env.d.ts`, `src/components/Footer.tsx`, `src/components/Footer.module.css`
+
+---
+
 ## [2.0.0] — 2026-04-04
 
 ### 新功能

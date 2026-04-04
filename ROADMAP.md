@@ -150,6 +150,9 @@
 - [x] v2.0：FilterBar 改用 useFilter context hook
 - [x] v2.0：「查看詳情 →」按鈕 UI 調整（低調 pill 外框、位置在描述與 tech tags 之間）
 - [x] v2.0：CLAUDE.md 架構文件更新（新增元件、路由、Context、雙主題）
+- [x] v2.1：導入版本追蹤系統（Vite build-time 注入、version.ts、version.json、Git Tag）
+- [x] v2.1：Footer 版本標籤顯示（hover 高亮 + tooltip）
+- [x] v2.1：Footer ♥ 改為高亮紅色
 
 ---
 
@@ -165,4 +168,5 @@
 | v1.1 | 加入截圖與連結 | 🟡 規劃中 |
 | v1.2 | SEO 優化 | 🟡 規劃中 |
 | v2.0 | 搜尋 + 專案詳情頁 + 主題切換 | ✅ 已完成 |
+| v2.1 | 版本追蹤系統 + Footer 樣式優化 | ✅ 已完成 |
 | v3.0 | i18n + 統計儀表板 + CMS | 🔵 遠期 |
