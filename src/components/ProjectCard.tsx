@@ -100,7 +100,10 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           </div>
         )}
 
-        {/* Detail page link */}
+      </div>
+
+      {/* Detail page link */}
+      {expanded && (
         <button
           className={styles.detailLink}
           onClick={(e) => {
@@ -110,7 +113,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         >
           查看詳情 →
         </button>
-      </div>
+      )}
 
       {/* Tech tags */}
       <div className={styles.techRow}>
