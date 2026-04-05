@@ -297,6 +297,21 @@
     "screenshot": ""
   },
   {
+    "id": "superset-windows",
+    "name": "Superset Windows Port",
+    "tagline": "AI Agents IDE 的 Windows 移植工程",
+    "description": "將 Superset（多 AI Agent 協作 IDE，支援 Claude Code、Codex、Cursor Agent 等）成功移植至 Windows 11。主要工作包括：Shell 腳本全面改寫為 TypeScript 跨平台版、Terminal Host Daemon 從 Unix Socket 改為 Windows Named Pipe、Bun 套件管理器相容性修復、Electron 原生模組重建流程，以及完整的 Windows 安裝與開發指南（WINDOWS_NOTES.md）。",
+    "tech": ["Electron", "React 19", "TypeScript", "Bun", "Turborepo", "Next.js", "node-pty", "Windows Named Pipes"],
+    "category": "開發者工具",
+    "status": "active",
+    "folder": "superset-main",
+    "icon": "🪟",
+    "links": {
+      "github": "https://github.com/superset-sh/superset"
+    },
+    "screenshot": ""
+  },
+  {
     "id": "skill-tracker",
     "name": "SkillTracker",
     "tagline": "Claude Code Skill 使用追蹤與分析平台",
